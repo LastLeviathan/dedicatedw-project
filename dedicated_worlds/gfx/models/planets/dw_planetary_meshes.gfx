@@ -1,0 +1,13 @@
+objectTypes = {
+
+
+	########################PLANETS################################
+
+	pdxmesh = {
+		name = "dw_planet_mesh"
+		file = "gfx/models/planets/planet_clouded.mesh" #standard planet mesh, can change for different environment look
+		animation = { id = "idle"	type = "planet_clouded_idle" }
+		scale = 15 # increases size of planet in the center
+		cull_distance = 99999999.0f
+	}	
+}

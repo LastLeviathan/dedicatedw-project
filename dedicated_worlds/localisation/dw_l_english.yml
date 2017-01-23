@@ -1,0 +1,107 @@
+﻿l_english:
+
+
+ #####################################
+ # Planet Modifiers
+ #####################################
+ orbital_shipyards: "Orbital Shipyard" 
+ orbital_shipyards_desc: "This planet has a shipyard encircling the planet, providing an expansive ability to construct or repair starships."
+ ecumenopolis: "Ecumenopolis"
+ ecumenopolis_desc: "An Ecumenopolis is a type of planet, or in some cases a moon, whose entire surface is covered with a single worldwide city. In some cases planets may still have its oceans, meaning only its landmasses are completely built over."
+ ecumenopolis_under_construction:0 "Ecumenopolis Construction"
+ ecumenopolis_under_construction_desc:0 "The world is currently subject to massive infastructure and urban restructuring as it becomes a planet-wide city."
+ core_world:0 "Core World"
+ core_world_desc:0 "This world has thrived throughout the many years since its colonization, establishing itself as an economic center in its local galactic region."
+ developing_world:0 "Developing World"
+ developing_world_desc:0 "This world has seen an invigoration of investment and growth from companies or the local governement. As the planet begins to grow in wealth, so to does its population increase, giving rise to a rapidly developing world."
+ established_colony:0 "Established Colony"
+ established_colony_desc:0 "Throughout the years this planet has established itself as a functioning and thriving colony. Although its population and cities remain limited, it has seen an increase in attraction for both migration and investment."
+ developing_colony:0 "Developing Colony"
+ developing_colony_desc:0 "This colony has been noted as a promising investment and has seen an incease in funding for its local development and resource exploitation."
+ new_colony:0 "New Colony"
+ new_colony_desc:0 "This planet has been colonised recently, cities remain sparse and the local resources and land remain virtually untouched."
+ 
+ mining_world:0 "Mining World"
+ mining_world_desc:0 "This planet is the site of a plethora of mining operations across its surface and subterranean levels. Throughout the landmasses are an overwhelming amount of quarries and strip mining operations built to excavate the riches at the surface and those hidden deep below."
+ research_world:0 "Research World"
+ research_world_desc:0 "This world has an abundance of labs and research facilities with the majority of the planets' production and funds flowing into the sciences."
+ trade_world:0 "Trade World"
+ trade_world_desc:0 "Years of investment and development has allowed this world to evolve into a trade hub in this system."
+ fortress_world:0 "Fortress World"
+ fortress_world_desc:0 "This world has been heavily fortified over the years. Controlling it provides a significant strategic asset within the galactic region."
+ prison_world:0 "Prison World"
+ prison_world_desc:0 "This world has been designated a prison planet, a location where the controlling force may send its undesirables far away from the civilian population."
+ agri_world:0 "Agri World"
+ agri_world_desc:0 "This world is covered in vast agricultural production sites that can sustain trillions of people."
+ outpost_world:0 "Planetary Outpost"
+ outpost_world_desc:0 "This small colony has been built for the purpose of providing a forward outpost in this region of space."
+ recruiting_world:0 "Recruiting World"
+ recruiting_world_desc:0 "This world is known for providing an exceptional supply of trained recruits for the armed forces of its empire."
+ cultural_world:0 "Cultural World"
+ cultural_world_desc:0 "Whether from its landscapes, architecture or arts, this world has become known throughout this region of space as a cultural center."
+ focus_world:0 "Focusing World"
+ focus_world_desc:0 "The planetary government is in the process of focusing the planet's infrastructure and economy in a certain direction. As a result, the overall production will suffer until the efforts are complete."
+ refocus_world:0 "Refocusing World"
+ refocus_world_desc:0 "The planetary government is in the proces of undoing years of development towards the planet's focus, reducing production and displeasing the local population."
+ strip_mined:0 "Stripped World"
+ strip_mined_desc:0 "The surface and underground of this world have been victim to extensive mining operations, leaving the living conditions less than pleasant and in some places even harmful."
+ 
+ #####################################
+ # Edicts
+ #####################################
+ 
+ edict_mining_world:0 "Develop Mining World"
+ edict_mining_world_desc:0 "This edict begins development into the infastructure for large scale mining operations, both on the surface and into the darkest corners of the deep.\n\n§LSelecting this focus will permanently render the world deficient in its food producing capabilties and prevent it from turning into an Agri World in the future.§!\n\n"
+ edict_research_world:0 "Develop Research World"
+ edict_research_world_desc:0 "This edict gathers scientists from across your star nation together for advanced scientific projects and facilities.\n\n"
+ edict_trade_world:0 "Develop Trade World"
+ edict_trade_world_desc:0 "This edict paves the way for massive investment from both the government and local companies, allowing the economic and business infastructure to thrive.\n\n"
+ edict_fortress_world:0 "Develop Fortress World"
+ edict_fortress_world_desc:0 "This edict focuses all efforts into constructing and maintaining the foundations for a massive scale defense and fortification system on this planet.\n\n"
+ edict_prison_world:0 "Develop Prison World"
+ edict_prison_world_desc:0 "This edict condemns this world to housing the nation's scum and enemies within its large scale labour camps and penitentiaries.\n\n"
+ edict_agri_world:0 "Develop Agri World"
+ edict_agri_world_desc:0 "This edict provides overwhelming funding to the agriculture and harvest sectors, allowing this one planet to feed many.\n\n"
+ edict_outpost_world:0 "Develop Outpost World"
+ edict_outpost_world_desc:0 "This edict begins development of a small scale military and sensor outpost on this planet.\n\n"
+ edict_recruiting_world:0 "Develop Recruiting World"
+ edict_recruiting_world_desc:0 "This edict begins the process of transforming this planet into a major source of manpower. Training compounds and institutions for extensive military training will dot its surface, providing the best soldiers in the nation.\n\n"
+ edict_cultural_world:0 "Develop Cultural World"
+ edict_cultural_world_desc:0 "This edict subsidizes the wonders, heritage and natural sites on this planet so that the world may prosper into a shining jewel of our great culture.\n\n"
+ edict_refocus_world:0 "Refocus Planet"
+ edict_refocus_world_desc:0 "Begin the process of refocusing this planet's efforts into another direction.\n\n"
+ edict_build_ecumenopolis:0 "Build Ecumenopolis"
+ edict_build_ecumenopolis_desc:0 "Gather the nation's finest engineers and architects to set in motions plans to turn this world into an ecumenopolis, or planet-wide city.\n\n"
+ 
+ #####################################
+ # Planets
+ #####################################  
+ 
+ pc_ecunemopolis:0 "Ecunemopolis"
+ pc_ecunemopolis_desc:0 "City-covered world with a stable atmosphere. All the landmasses are covered by great towering cities."
+ pc_ecunemopolis_tile:0 "Ecunemopolis Building Platform"
+ pc_ecunemopolis_tile_desc:0 "A vacant platform on the higher city levels." 
+ 
+ #####################################
+ # Projects
+ #####################################  
+ 
+ ECUMENOPOLIS_1_PROJECT:0 "Planning An Ecumenopolis"
+ ECUMENOPOLIS_1_PROJECT_DESC:0 "You have gathered your foremost architects and engineers together in an effort to pool their knowledge. They need your permission and funding to begin the process of designing the proposal for this project."
+ ECUMENOPOLIS_2_PROJECT:0 "Construct Planet Wide City on [From.GetName]"
+ ECUMENOPOLIS_2_PROJECT_DESC:0 "The architects and engineers you tasked on [From.GetName] have compiled and presented you with a detailed plan on restructuring the planet into a worldwide city. All that remains is for you to approve the plan and task them to begin construction."
+ 
+ #####################################
+# Miscellaneous
+#####################################
+
+dw.7.name:0 "Ecumenopolis Project"
+dw.7.desc:0 "The idea of a planet-wide city, once a dream of science fiction, is now within our technological grasp. A feat of engineering unlike anything else we have attempted, it is time to bring the greatest minds of our age to [Root.GetName] so that we may begin planning."
+dw.7.a:0 "Gather them."
+dw.7.b:0 "Cancel the project."
+
+dw.9.name:0 "Ecumenopolis"
+dw.9.desc:0 "Having built itself up during the course of prosperity, [Root.GetName] has had its landmasses completely built over. With the entire surface covered with a single worldwide city, it has become a center of power in the region, with its population housing tens if not hundreds of billions of inhabitants."
+dw.9.a:0 "A new chapter begins for [Root.GetName]."
+
+ 

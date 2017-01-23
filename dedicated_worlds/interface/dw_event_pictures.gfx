@@ -1,0 +1,32 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_evt_ecumenopolis"
+		texturefile = "gfx/event_pictures/ecumenopolis.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+	
+}
+
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_evt_blueprints_city"
+		texturefile = "gfx/event_pictures/blueprints_city.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+	
+}
+
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_evt_ecumenopolis2"
+		texturefile = "gfx/event_pictures/ecumenopolis2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+	
+}

@@ -1,0 +1,585 @@
+##########################################################################
+# Planet edicts
+##########################################################################
+
+# Variables:
+#  name, the name of the edict, also serves as localisation key.
+#  influence_cost, the base influence cost of activating the edict.
+#  potential, planet or country trigger to decide whether the edict should be shown.
+#  allow, planet or country trigger to decide if whether this edict can be activated.
+#  effect, an effect that is executed when this trigger activates.
+#  prerequisites, tech requirements for this trigger.
+#  ai_will_do, determines AI scoring for edict
+#  modifier, a list of modifiers
+#  length, number of days the trigger is active.
+
+# Sets the edict-cost for all edicts with this variable
+
+#3600 is default
+
+# Sets the edict-cost for all edicts with this variable
+@dwEdictCost = 50
+
+###############################
+### Planetary Focus Edicts  ###
+###############################
+
+planet_edict = {
+	name = "mining_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {
+	is_capital = no	
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	
+	
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "mining_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "strip_mined"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = mining_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}				
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "recruiting_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+		
+	}
+	
+	potential = {
+	is_capital = no
+	NOT = {
+	has_planet_flag = refocus_world	
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "recruiting_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = recruiting_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "prison_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	has_modifier = ecumenopolis
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "prison_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = prison_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+planet_edict = {
+	name = "trade_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+		
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "trade_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = trade_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+planet_edict = {
+	name = "research_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+			
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "research_world"	
+					days = -1					
+					}
+			
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = research_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "agri_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	has_modifier = strip_mined
+	has_modifier = ecumenopolis
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "agri_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = agri_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "fortress_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "fortress_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = fortress_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "outpost_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {	
+	is_capital = no		
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	has_modifier = ecumenopolis
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "outpost_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100					
+					}
+			set_planet_flag = outpost_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}
+		}
+	}
+	
+}
+
+planet_edict = {
+	name = "cultural_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+	}
+	
+	potential = {
+	is_capital = no	
+	NOT = {
+	has_planet_flag = refocus_world
+	has_modifier = strip_mined
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	has_modifier = cultural_world
+	
+	}
+	
+	}
+	
+	length = 3600
+	
+	allow = {
+	}
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+					modifier = "cultural_world"	
+					days = -1					
+					}
+			add_modifier = {
+					modifier = "focus_world"	
+					days = 100
+					}
+			set_planet_flag = cultural_world
+			set_timed_planet_flag = {
+							flag = focus_world
+							days = 100
+						}				
+		}
+	}
+	
+}
+planet_edict = {
+	name = "refocus_world"
+	influence_cost = @dwEdictCost
+	modifier = {
+		pop_happiness = -0.15
+	}
+	
+	potential = {
+	
+	OR = {
+	has_modifier = mining_world
+	has_modifier = prison_world
+	has_modifier = recruiting_world
+	has_modifier = prison_world
+	has_modifier = research_world
+	has_modifier = fortress_world
+	has_modifier = agri_world
+	has_modifier = trade_world
+	has_modifier = outpost_world
+	}
+	NOT = { has_planet_flag = focus_world }
+	}
+	
+	length = 180
+	effect = {
+		add_modifier = {
+					modifier = "refocus_world"	
+					days = 180					
+					}
+		hidden_effect = {
+			set_timed_planet_flag = {
+				flag = refocus_world
+				days = 180
+			}		
+	
+	remove_planet_flag = prison_world
+	remove_planet_flag = research_world
+	remove_planet_flag = fortress_world
+	remove_planet_flag = agri_world
+	remove_planet_flag = trade_world
+	remove_planet_flag = recruiting_world
+	remove_planet_flag = prison_world
+	remove_planet_flag = mining_world
+	remove_planet_flag = outpost_world
+	remove_modifier = mining_world
+	remove_modifier = prison_world
+	remove_modifier = recruiting_world
+	remove_modifier = prison_world
+	remove_modifier = research_world
+	remove_modifier = fortress_world
+	remove_modifier = agri_world
+	remove_modifier = trade_world
+	remove_modifier = outpost_world
+	
+		}
+	}
+	allow = {
+	}
+	
+	
+}
+
+###############################
+### Misc Edicts ###
+###############################
+
+planet_edict = {
+	name = "build_ecumenopolis"
+	influence_cost = @dwEdictCost
+	modifier = {
+		
+		
+	}
+	prerequisites = { 
+		"tech_galactic_administration"
+	}
+	
+	potential = {
+		
+		NOT = {
+			has_planet_flag = ecumenopolis
+			#has_planet_flag = ecumenopolis_buildable
+			has_modifier = mining_world
+			has_modifier = prison_world
+			has_modifier = agri_world	
+			has_modifier = outpost_world
+			has_modifier = refocus_world
+			has_modifier = focus_world	
+			has_modifier = ecumenopolis_under_construction
+	}
+	
+	}
+	allow = {
+		#owner = { minerals > 3000 }
+		#has_building = building_capital_2 
+	}
+	length = 30
+	
+	
+	effect = {
+		hidden_effect = {
+			set_planet_flag = ecumenopolis_buildable
+				
+			}
+	  }
+	}

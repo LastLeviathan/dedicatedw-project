@@ -1,0 +1,8 @@
+
+#dw.7 checks if ecunemopolis edict has been activated
+on_monthly_pulse = {
+	events = {
+		dw.0
+		
+	}
+}
